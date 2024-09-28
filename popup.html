@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        background-image: linear-gradient(to top right, blue, green);
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
+      #reloadBtn, #randomBtn {
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        background-color: rgba(66, 133, 244, 0.8);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+      }
+      #reloadBtn:hover, #randomBtn:hover {
+        background-color: rgba(53, 122, 232, 0.8);
+      }
+      #participantList {
+        margin-top: 15px;
+        max-height: 200px;
+        overflow-y: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #participantList label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      #participantList input {
+        margin-right: 5px;
+      }
+      #resultDisplay {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="reloadBtn">Reload Participants</button>
+      <button id="randomBtn">Show Random Participant</button>
+    </div>
+    <div id="participantList"></div>
+    <div id="resultDisplay"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
