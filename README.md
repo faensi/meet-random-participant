@@ -1,4 +1,4 @@
-# Chrome Extension: Gradient Background
+# Chrome Extension: meet-random-participant
 
 A Chrome extension that gets the names of participants from a google meet call to display a random participant.
 Indended for usage when teaching.
